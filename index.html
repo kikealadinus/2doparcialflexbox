@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/examen.css">
+
+    <script src="js/app.js"></script>
+    <script src="js/hora.js"></script>
+    <script src="js/contar.js"></script>
+    <script src="js/tarea.js"></script>
+
+    <title>NOGALES</title>
+</head>
+<body>
+    <div class="contenedor-pricipal">
+        <nav>
+            <a onclick="updateCounter(this)" class="titulo" href="#">View Cart Order History</a>
+            <div class="contact">800-888-8888</div>
+            <div class="logo">
+                <img class="kike" src="img/logo2.jpg" alt="mi-logo" id="myDiv">
+            </div>
+            <input class="estiloInput" type="text" id="tarea" placeholder="buscar"/>
+            <button class="estiloBoton" onclick="agregarTarea()">Search</button>
+            <ul id="listaTareas"></ul>
+            <div class="menu">
+                <ul>
+                    <li>Home</li> |
+                    <li>AboutUs</li> |
+                    <li>Products</li> |
+                    <li>Blog</li> |
+                    <li>News</li> |
+                    <li>Support</li> |
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <section>
+                <article class="seccion1">
+                    <div class="accordion">
+                        
+                        <input type="radio" name="toggle" class="accordion-toggle" checked />
+                        <div class="accordion-header">GPS</div>
+                        <div class="accordion-content"><p>El Global Positioning System constituye una forma segura y rápida de 
+                            ubicación satelital en cualquier parte de la tierra, con un rango de precisión variable. 
+                            Sus orígenes militares (el Departamento de Defensa de los EE.UU) no impidieron su comercialización 
+                            y aplicación a otros tipos de aparato tecnológico, como automóviles o teléfonos inteligentes.</p>
+                        </div>                        
+                        
+                        <input type="radio" name="toggle" class="accordion-toggle" />
+                        <div class="accordion-header">Computadoras.</div>
+                        <div class="accordion-content"><p>La gran revolución tecnológica de finales del siglo XX habría sido imposible
+                             sin las computadoras modernas, aparatos formidables comparados con las calculadoras y sistemas de 
+                             tarjetas perforadas que fueron alguna vez. En tanto herramienta multifacética y veloz, y sistema de gestión de datos.</p>
+                        </div>                        
+                        
+                        <input type="radio" name="toggle" class="accordion-toggle" />
+                        <div class="accordion-header">Cámara fotográfica</div>
+                        <div class="accordion-content"><p>El origen de la cámara fotográfica se remonta a finales del siglo XIX, cuando la empresa de
+                             capturar técnicamente la imagen empezó a ser un sueño alcanzable. La cámara contemporánea es fruto de 
+                             la evolución tecnológica de óptica moderna.</p>
+                        </div> 
+
+                        <input type="radio" name="toggle" class="accordion-toggle" />
+                        <div class="accordion-header">La rueda</div>
+                        <div class="accordion-content"><p>Aunque no lo parezca, la rueda es uno de los primerísimos artefactos tecnológicos de la 
+                            historia de la humanidad. Su invención se pierde en la memoria de los tiempos, pero es vital para el surgimiento 
+                            de tecnologías posteriores y para el desarrollo de las primeras máquinas humanas, precursores de la tecnología actual.</p>
+                        </div> 
+
+                        <input type="radio" name="toggle" class="accordion-toggle" />
+                        <div class="accordion-header">El libro</div>
+                        <div class="accordion-content"><p>Otro invento insospechadamente tecnológico, por lo acostumbrados que estamos a él 
+                            y lo antiguo de sus diseños iniciales, el libro es el soporte textual por excelencia y es imposible producirlo 
+                            sin una maquinaria técnica especializada, imprenta.</p>
+                        </div> 
+
+                        <input type="radio" name="toggle" class="accordion-toggle" />
+                        <div class="accordion-header">Teléfono móvil</div>
+                        <div class="accordion-content"><p>Este dispositivo inalámbrico electrónico, capaz de conectarse a una red de telefonía
+                             y transmisión de datos, permite hoy en día múltiples funciones adicionales y se ha convertido en un implemento 
+                             indispensable en la vida contemporánea.</p>
+                        </div> 
+
+                        <input type="radio" name="toggle" class="accordion-toggle" />
+                        <div class="accordion-header">Libros electrónicos</div>
+                        <div class="accordion-content"><p>Una versión moderna del libro, con capacidad para albergar un número elevado de documentos, 
+                            libros e incluso imágenes fotográficas, todo apuntando a un modelo de lectura tradicional, pero incorporado al 
+                            aprovechamiento del almacenaje digital.</p>
+                        </div> 
+                    </div>
+                </article>
+
+                <article class="seccion2">
+                    <img class="avatar" src="img/city.jpg" alt="fondo">
+                </article>
+            </section>
+        </main>        
+        
+        <div class="grid-container">
+            <div class="grid-item item1">
+                <h4 class="featured">Productos Destacados</h4>
+            </div>
+            <div class="grid-item item2">
+                <div id="clock"></div>
+                  <div id="counter-container">
+                    <p id="counter">Clics: 0</p>
+                </div>
+            </div>
+
+            <div class="grid-item item3">
+                <section class="product-container">
+                    <article class="product-image">
+                       <img class="transparent-image" src="img/1-swatch.png" alt="swatch">
+                    </article>
+                    <article class="product-description1">
+                       <span>Smartwatch</span>
+                       <span>350 Bs.</span>
+                       <p>Reloj inteligente dígital</p>
+                       <button onclick="updateCounter(this)">Ver </button>
+                    </article>
+                 </section>
+            </div>  
+
+            <div class="grid-item item4">
+                <section class="product-container">
+                    <article class="product-image">
+                       <img class="transparent-image" src="img/2-laptop.png" alt="Pavilion">
+                    </article>
+                    <article class="product-description2">
+                       <span>Hp Pavilion</span>
+                       <span>11000 Bs</span>
+                       <p>Diseñado para un mayor rendimiento</p>
+                       <button onclick="updateCounter(this)">Ver</button>
+                    </article>
+                 </section>
+            </div>
+            <div class="grid-item item5">
+                <section class="product-container">
+                    <article class="product-image">
+                       <img class="transparent-image" src="img/3-audifono.png" alt="JTBL">
+                    </article>
+                    <article class="product-description3">
+                       <span>Audífono JBL</span>
+                       <span>480 Bs.</span>
+                       <p>Sistema de sonido envolvente</p>
+                       <button onclick="updateCounter(this)">Ver</button>
+                    </article>
+                 </section>
+            </div>
+            <div class="grid-item item5">
+                <section class="product-container">
+                    <article class="product-image">
+                       <img class="transparent-image" src="img/4-camara.png" alt="Camera">
+                    </article>
+                    <article class="product-description4">
+                       <span>Cámara fotográfica</span>
+                       <span>5800 Bs.</span>
+                       <p>Evolución tecnológica de óptica moderna</p>
+                       <button onclick="updateCounter(this)">Ver</button>
+                    </article>
+                 </section>
+            </div>
+        </div>    
+
+        <footer>
+            <div class="caja">
+                <strong>Copyright &copy; 2023 <a href="">Nogales.C-H</a>.</strong>
+                Derechos de Autor.<b>PHP - </b> CSS                
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
